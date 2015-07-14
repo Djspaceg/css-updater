@@ -20,6 +20,9 @@ _Example_
     Run with switches:
     $ ./css-updater.pl ~/myFolder/ --dry-run --scale 1.5 --factor 3 -v
 
+_It is recommended that you run this with --dry-run the first few times to make sure it will do what you expect._
+
+This tool will look through all of the files you give it, find pixel values, and augment them as you desire. The modified copies of the will be saved parallel to each file it's found. The new file will take the name of the original file, and append the `--processed-suffix` to it (before the extension). Ex: `/1980sJurassicPark/css/rad-dinosaur.css` is saved-as `/1980sJurassicPark/css/rad-dinosaur-updated.css`.
 
 ## Useful Switches
 Below are the supported options.
